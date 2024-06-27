@@ -1,0 +1,62 @@
+Lab 19: How to handle events on JavaScript (Click, Double Click, MouseOver, MouseOut, OnLoad, OnChange)  
+
+Code:  
+
+  
+
+<!doctype html>  
+
+<html> <head> <script>  
+
+function hov() {  
+
+var e=document.getElementById('hover');  
+
+e.style.display='none';  
+
+}  
+
+function bigImg(x) {  
+
+x.style.height = "64px";  
+
+x.style.width = "64px";  
+
+}  
+
+function normalImg(x) {  
+
+x.style.height = "32px";  
+
+x.style.width = "32px";  
+
+}  
+
+</script>  </head>  
+
+<body>  
+
+<div id="hover"  
+
+onmouseover="hov()"  
+
+style="background-color:green;  
+
+height:200px;  
+
+width:200px;">  
+
+</div>  
+
+<input onchange="alert(this.value)"  
+
+type="number"  
+
+style="margin-left: 45%;">  
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://media.tenor.com/Wq-MvpjAJksAAAAM/emojilaugh-emoji.gif" alt="Smiley" width="32" height="32">  
+
+</body>  
+
+</html>  
+
